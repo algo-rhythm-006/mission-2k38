@@ -1,12 +1,14 @@
 "use client";
 
 import { useEffect, useRef, useState } from "react";
+import { useRouter } from "next/navigation";
 import gsap from "gsap";
 import { FiVolume2, FiVolumeX } from "react-icons/fi";
 import { HiMenuAlt4 } from "react-icons/hi";
 import { IoFootballOutline } from "react-icons/io5";
 
 const Navbar = () => {
+    const router = useRouter();
     const navContainerRef = useRef(null);
     const menuRef = useRef(null);
     const tl = useRef(null);
@@ -126,7 +128,10 @@ const Navbar = () => {
                     {/* ===== RIGHT CONTROLS ===== */}
                     <div className="flex items-center gap-3">
                         {/* Login Button */}
-                        <button className="hidden items-center justify-center rounded-full bg-black px-6 py-2.5 text-xs font-bold uppercase tracking-wider text-white border border-white/20 transition-all hover:bg-white hover:text-black md:flex">
+                        <button
+                            onClick={() => router.push("/login")}
+                            className="hidden items-center justify-center rounded-full bg-black px-6 py-2.5 text-xs font-bold uppercase tracking-wider text-white border border-white/20 transition-all hover:bg-white hover:text-black md:flex"
+                        >
                             Login
                         </button>
 

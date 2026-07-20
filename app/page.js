@@ -54,8 +54,6 @@ export default function Home() {
         <Features />
         <HistorySection />
         <QuoteSection />
-        {/* Smooth bridge: light QuoteSection → black Footer */}
-        <div className="h-32 w-full bg-gradient-to-b from-[#FBFBFB] to-black relative z-10" />
         <Footer01 />
       </main>
     </>
