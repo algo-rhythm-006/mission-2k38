@@ -122,7 +122,7 @@ const LoginForm = ({ role }) => {
               transition={{ delay: 0.25, duration: 0.5 }}
               className="text-sm text-white/50 leading-relaxed"
             >
-              Welcome back. Sign in to continue your FOOTLAB journey.
+              Welcome back. Sign in to continue your Mission 2K38 journey.
             </motion.p>
           </div>
 
@@ -213,7 +213,7 @@ const LoginForm = ({ role }) => {
                 type="submit"
                 className="w-full !rounded-xl !bg-yellow-400 !border-yellow-500/50 !text-black !font-bold hover:!bg-yellow-300 dark:!bg-yellow-400 dark:!text-black dark:!border-yellow-500/50"
               >
-                Sign In to FOOTLAB
+                Sign In to Mission 2K38
               </AnimatedButton>
             </motion.div>
           </form>
