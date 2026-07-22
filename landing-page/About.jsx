@@ -4,8 +4,9 @@ import { useRef } from "react";
 import { useGSAP } from "@gsap/react";
 import gsap from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
-
+import NextImage from "next/image";
 import { AnimatedTitle } from "./Animated-Title";
+import Image from "../public/login/images/stadium.png";
 
 gsap.registerPlugin(ScrollTrigger);
 
@@ -44,22 +45,38 @@ const About = () => {
             {/* TOP CONTENT */}
             <div className="relative flex flex-col items-center justify-center gap-6 py-32 text-center text-black min-h-[50vh]">
                 <p className="font-general text-sm uppercase md:text-[10px] relative z-10">
-                    Welcome to Zentry
+                    Welcome to Mission 2K38
                 </p>
 
-                <AnimatedTitle containerClass="mt-5 text-center !text-black text-6xl md:text-8xl font-black uppercase">
-                    {
-                        "Discover the world's<br /> largest shared adventure"
-                    }
+                <AnimatedTitle
+                    containerClass="
+    mt-8
+    mx-auto
+    max-w-[1500px]
+    text-center
+    uppercase
+    font-black
+    text-5xl
+    sm:text-6xl
+    md:text-7xl
+    lg:text-[8rem]
+    leading-[0.9]
+    tracking-[-0.05em]
+    text-black
+  "
+                >
+                    {"Empowering India's<br /> Next Football Generation"}
                 </AnimatedTitle>
 
-                <div className="about-subtext space-y-2 text-gray-700 text-sm md:text-base max-w-2xl px-6">
+                <div className="about-subtext space-y-3 text-gray-700 text-sm md:text-base max-w-2xl px-6">
                     <p>
-                        The Game of Games begins-your life, now an epic MMORPG
+                        Connecting players, coaches, scouts, and clubs on one platform to
+                        unlock football talent across India.
                     </p>
 
                     <p>
-                        Zentry unites every player from countless games and platforms
+                        From grassroots dreams to professional opportunities, we're building
+                        the future of Indian football—one player at a time.
                     </p>
                 </div>
             </div>
@@ -79,8 +96,8 @@ const About = () => {
             mx-auto
           "
                 >
-                    <img
-                        src="https://images.unsplash.com/photo-1511512578047-dfb367046420?q=80&w=1974&auto=format&fit=crop"
+                    <NextImage
+                        src={Image}
                         alt="Gaming World"
                         className="absolute top-0 left-0 h-full w-full object-cover"
                     />
